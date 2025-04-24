@@ -1,0 +1,75 @@
+:root {
+  --system-ui: Roboto, "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --submit-color: #004615;
+  --cancel-color: #6f101b;
+  --low-priority-color: #009432;
+  --medium-priority-color: #ff9400;
+  --high-priority-color: #e2162a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--system-ui);
+  min-height: 100vh;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+div#slideContainer {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+div.slide {
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+div#buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+div#dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+}
+
+div#dots button {
+  padding: 0.5em;
+  border: solid 1px black;
+  border-radius: 10px;
+  height: 2px;
+}
+
+div#dots button:hover {
+  background-color: rgb(74, 69, 69);
+}
